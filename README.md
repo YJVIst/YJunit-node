@@ -4,7 +4,7 @@ YJunit 的节点被控与代理内核二进制发行仓库，支持 Linux amd64 
 
 包含 Rust agent、sing-box、Xray，以及安装、更新和卸载维护程序。主控面板在 [YJunit](https://github.com/YJVIst/YJunit) 下载。
 
-> 需要已支持独立节点发行和手动接入的新主控。现有公开主控 v0.12.0 不支持新增网卡上报字段，请先升级配套主控，不要单独覆盖生产 agent。
+> 需要主控 v0.13.0 或更新版本。旧主控 v0.12.0 不支持新增网卡上报字段，请先升级主控，再升级 agent。升级顺序见 [v0.13.0 更新说明](https://github.com/YJVIst/YJunit/blob/main/docs/release-v0.13.0.md)。
 
 ## 接入节点
 
