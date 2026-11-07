@@ -7,23 +7,6 @@ The independent YJVIst/YJunit-node distribution includes:
   Its matching patched source archive, license and build manifest are in releases/.
 - The separately executed Xray-core, MPL-2.0, with its pinned version, checksum,
   matching patched source (including the authorization/audit adapter) and license.
-- The separately executed Shadowsocks Rust integration, MIT, based on the pinned
-  shadowsocks-rust upstream snapshot. Its matching source, license, patch and build
-  metadata are included with the node distribution.
 
 Rust and JavaScript dependencies retain their respective licenses. Cargo.lock and
 web/package-lock.json record the dependency versions. Portable builds include musl (MIT).
-
-Optional IP country data downloaded by the controller:
-IP Geolocation by DB-IP (https://db-ip.com), DB-IP Country Lite,
-licensed under Creative Commons Attribution 4.0 International
-(https://creativecommons.org/licenses/by/4.0/). This data is not included
-in the controller binary; administrators may download the original database.
-
-Optional MaxMind GeoLite City and ASN data
---------------------------------
-This product optionally downloads GeoLite data created by MaxMind, available
-from https://www.maxmind.com. It includes geographical data from GeoNames
-(https://www.geonames.org). Users supply their own licensed account credentials.
-MaxMind databases are not bundled with this software; applicable database
-license terms govern their use and redistribution.

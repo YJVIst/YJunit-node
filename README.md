@@ -2,11 +2,11 @@
 
 YJunit 的节点被控与代理内核二进制发行仓库，支持 Linux amd64 / arm64。
 
-包含 Rust agent、sing-box、Xray、Shadowsocks Rust，以及安装、更新和卸载维护程序。主控面板在 [YJunit](https://github.com/YJVIst/YJunit) 下载。
+包含 Rust agent、sing-box、Xray，以及安装、更新和卸载维护程序。主控面板在 [YJunit](https://github.com/YJVIst/YJunit) 下载。
 
-当前 agent **v0.11.1**，请先升级主控到 **v0.20.1**，再在服务器管理中更新被控。
+> 需要主控 v0.13.0 或更新版本。旧主控 v0.12.0 不支持新增网卡上报字段，请先升级主控，再升级 agent。升级顺序见 [v0.13.0 更新说明](https://github.com/YJVIst/YJunit/blob/main/docs/release-v0.13.0.md)。
 
-包含 sing-box 1.14.4-yjunit.5、Xray 26.10.29-yjunit.1 和独立 Shadowsocks Rust 1.25.0-yjunit.1。新 Rust 内核支持认证 AEAD/SS2022 算法、TCP/UDP、HTTP 伪装（可配置路径）、WS、TLS 与可选 MPTCP（不支持时回退 TCP）。已有 sing-box/Xray 节点继续使用原内核。详见[配置与客户端矩阵](docs/shadowsocks-rust.md)。
+当前 agent **v0.10.4**，与主控 v0.14.0 配合提供本地设备准入复用；代理内核版本不变。详见[本版更新说明](docs/release-v0.10.4.md)。
 
 ## 接入节点
 
@@ -30,4 +30,4 @@ YJunit 的节点被控与代理内核二进制发行仓库，支持 Linux amd64 
 
 ## 许可
 
-YJunit agent 和安装脚本使用 MIT 许可，允许修改、二次分发及商业使用，须保留许可声明。sing-box、Xray、Shadowsocks Rust 分别遵循 GPL-3.0-or-later、MPL-2.0 和 MIT；各自对应的修改后源码、许可和构建元数据随节点包提供。
+YJunit agent 和安装脚本使用 MIT 许可，允许修改、二次分发及商业使用，须保留许可声明。sing-box 与 Xray 分别遵循 GPL-3.0-or-later 和 MPL-2.0；各自对应的修改后源码、许可和构建元数据随节点包提供。
