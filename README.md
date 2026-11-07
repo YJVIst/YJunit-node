@@ -4,7 +4,7 @@ YJunit 的节点被控与代理内核二进制发行仓库，支持 Linux amd64 
 
 包含 Rust agent、sing-box、Xray、Shadowsocks Rust，以及安装、更新和卸载维护程序。主控面板在 [YJunit](https://github.com/YJVIst/YJunit) 下载。
 
-当前 agent **v0.11.0**，请先升级主控到 **v0.20.0**，再在服务器管理中更新被控。
+当前 agent **v0.11.1**，请先升级主控到 **v0.20.1**，再在服务器管理中更新被控。
 
 包含 sing-box 1.14.4-yjunit.5、Xray 26.10.29-yjunit.1 和独立 Shadowsocks Rust 1.25.0-yjunit.1。新 Rust 内核支持认证 AEAD/SS2022 算法、TCP/UDP、HTTP 伪装（可配置路径）、WS、TLS 与可选 MPTCP（不支持时回退 TCP）。已有 sing-box/Xray 节点继续使用原内核。详见[配置与客户端矩阵](docs/shadowsocks-rust.md)。
 

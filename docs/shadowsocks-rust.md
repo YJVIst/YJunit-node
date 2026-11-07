@@ -2,7 +2,7 @@
 
 在节点管理中选择 **Shadowsocks Rust**，由独立的 Rust 内核提供服务。已有 Shadowsocks 和 AnyTLS 节点继续使用 sing-box；Xray 扩展节点继续使用 Xray。
 
-本功能需要配套 agent v0.11.0 和 `shadowsocks-rust 1.25.0-yjunit.1`。主控 v0.20.0 起提供配置入口，请先更新主控，再在服务器管理中更新被控。
+本功能需要配套 agent v0.11.1 和 `shadowsocks-rust 1.25.0-yjunit.1`。主控 v0.20.1 起提供配置入口，请先更新主控，再在服务器管理中更新被控。
 
 ## 节点配置
 
